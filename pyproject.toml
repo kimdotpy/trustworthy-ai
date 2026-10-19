@@ -1,0 +1,19 @@
+[project]
+name = "trustworthy-ai"
+version = "0.1.0"
+description = "Input and Output Guardrails for AI Applications - Privacy, Safety, and Reliability"
+readme = "README.md"
+authors = [
+    { name = "kimdotpy", email = "kimdotpy@gmail.com" }
+]
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+trustworthy-ai = "trustworthy_ai.example_app:interactive_demo"
+test-guardrails = "trustworthy_ai.test_suite:main"
+generate-report = "trustworthy_ai.report_generator:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
